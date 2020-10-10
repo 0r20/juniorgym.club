@@ -1,0 +1,45 @@
+.contacts {
+	position: relative;
+	background-color: #f4f4f4;
+	&-block {
+		position: absolute;
+		left: 10%;
+		top: 50%;
+		margin-top: -215px;
+		width: 320px;
+    height: 430px !important;
+		background-color: #fff;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		@media (max-width: 781px) {
+			position: static !important;
+			width: 100%;
+			display: flex;
+			margin: 0;
+		}
+		&__address {
+			margin-bottom: 40px;
+		}
+		&__phone {
+			margin-bottom: 40px;
+		}
+		&__title {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 10px;
+		}
+		&__flex {
+			display: flex;
+			width: 250px;
+			// justify-content: center;
+		}
+		&__icon {
+			margin-right: 20px;
+			font-size: 20px;
+			color: $green;
+		}
+	}
+}

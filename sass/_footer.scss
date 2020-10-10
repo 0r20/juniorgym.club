@@ -1,0 +1,47 @@
+.footer {
+  color: $white;
+  background-color: $black;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1030px) {
+      flex-direction: column;
+    }
+  }
+  &-social {
+    display: flex;
+    i {
+      color: $white;
+    }
+  }
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-item {
+    padding: 20px;
+    @media (max-width: 1030px) {
+      width: 33.333%;
+    }
+    @media (max-width: 400px) {
+      width: 50%;
+    }
+    display: flex;
+    justify-content: center;
+    &:hover {
+      background-color: darken($green, 4);
+      a {
+        color: $white;
+      }
+    }
+    a {
+      color: $white;
+    }
+  }
+  &-right {
+    @media (max-width: 1030px) {
+      margin: 20px 0;
+    }
+  }
+}

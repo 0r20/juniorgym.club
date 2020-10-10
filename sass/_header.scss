@@ -1,0 +1,153 @@
+.header {
+  width: 100%;
+  background-color: $green;
+  padding: 10px;
+  color: $white;
+  position: fixed;
+  z-index: 20;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-items {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    @media (max-width: 1230px) {
+      display: none;
+    }
+  }
+  &-item {
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 600;
+    transition: 0.2s linear;
+    &:hover {
+      a {
+        color: $black;
+      }
+    }
+    a {
+      transition: 0.2s linear;
+      font-size: 18px;
+      color: $white;
+    }
+  }
+  &-logo {
+    flex: 1;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: $black;
+    height: 60px;
+    img {
+      max-height: 100%;
+    }
+  }
+  &-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &-social {
+    display: flex;
+    margin-right: 30px;
+    @media (max-width: 730px) {
+      display: none;
+    }
+    &__number {
+      width: 130px;
+      p {
+        margin-bottom: 0;
+        font-weight: 600;
+      }
+    } 
+    &__bottom  {
+      display: flex;
+      i {
+        color: $white;
+      }
+      > div {
+          margin-right: 10px;
+        }
+    }  
+  }
+  &-subscribe {
+    @media (max-width: 730px) {
+      display: none;
+    }
+  }
+}
+
+.icon-menu {
+  font-size: 30px;
+  margin: 0 30px;
+  cursor: pointer;
+  display: none;
+  @media (max-width: 1230px) {
+    display: block;
+  }
+}
+
+.menu {
+  background: $white;
+  left: -285px; /* прячем меню */
+  position: fixed;
+  top: 0;
+  // left: 0;
+  height: 100%;
+  width: 285px;
+  z-index: 50;
+  padding-top: 10px;
+  .icon-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  &-item {
+    &:hover {
+      a {
+        color: $black;
+      }
+    }
+    a {
+      color: $black;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    margin: 20px 0;
+  }
+  &-items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &-social {
+    margin: 35px 0;
+    &__bottom {
+      display: flex;
+      justify-content: space-around;
+      i {
+        color: $green;
+      }
+    }
+  }
+}
+
+.overlay {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $black;
+  opacity: 0.4;
+  display: none;
+}
+      
+        

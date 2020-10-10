@@ -1,0 +1,26 @@
+.treners {
+  &__title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    h1 {
+      font-weight: 300;
+      text-transform: uppercase;
+      @media (max-width: 700px) {
+        font-size: 25px;
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card {
+      margin-bottom: 40px;
+      img {
+        object-fit: cover;
+        height: 300px;
+      }
+    }
+  }
+}

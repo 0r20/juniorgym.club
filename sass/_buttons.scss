@@ -1,0 +1,49 @@
+.button--black {
+  color: $white;
+  padding: 10px 35px;
+  border-radius: 41px;
+  background-color: $black;
+  transition: 0.2s linear;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $white;
+    color: $black;
+    a {
+      color: $black;
+    }
+  }
+  a {
+    color: $white;
+  }
+}
+
+.button--green {
+  color: $white;
+  padding: 10px 35px;
+  border-radius: 41px;
+  background-color: $green;
+  transition: 0.2s linear;
+  text-transform: uppercase;
+  &:hover {
+    background-color: lighten($green, 15);
+    a {
+      color: $white;
+    }
+  }
+  a {
+    color: $white;
+  }
+}
+
+.button--form {
+  color: $white;
+  padding: 10px 35px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: $green;
+  transition: 0.2s linear;
+  &:hover {
+    background-color: lighten($green, 15);
+  }
+  text-transform: uppercase;
+}
